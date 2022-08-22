@@ -187,7 +187,7 @@ function partieMasterMind() {
             /*AFFICAHE DU RESULTAT*/
             if (couleurTrouve >= tabCouleurCache.length) {
                 resultat.className = "alert alert-success m-1";
-                resultat.textContent = "Bravo vous avez trouvé en " + (NB_MAX_ESSAI - nbEssai) + " essai !";
+                resultat.textContent = "Bravo vous avez trouvé en " + (nbEssai) + " essai !";
                 gagne = true;
             }
         }
