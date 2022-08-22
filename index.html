@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!--   ***************************************************************  -->
+    <!--                              style.css                             -->
+    <!--   ***************************************************************  -->
+    <link rel="stylesheet" href="./asset/scss/style.css">
+    <title>MasterMind</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 shadow-lg p-3 mb-5 bg-body rounded m-5">
+                <header>
+                    <h3 class="text-center">Question 10</h3>
+                    <img src="./asset/image/mastermind.png" class="rounded mx-auto d-block" alt="...">
+                    <h4 class="text-center">MasterMind</h4>
+                </header>
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="text-center">Trouver la bonne combinaison !</h5>
+                        <div class="row">
+                            <div class="col-10">
+                                <h5>Liste des coups</h5>
+                                <div class="row">
+                                    <div class="col-10">
+                                        <div id="historique" class="row">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <h5>Votre essai</h5>
+                                <div id="affichage" class="input-group d-flex justify-content-center my-1">
+                                    <div id="btnchoix-1" class="btn-choix">Rien</div>
+                                    <div id="btnchoix-2" class="btn-choix">Rien</div>
+                                    <div id="btnchoix-3" class="btn-choix">Rien</div>
+                                    <div id="btnchoix-4" class="btn-choix">Rien</div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <h5>Couleur possible a sélectionner</h5>
+                                <div id="btn-sel" class="input-group d-flex justify-content-center my-1">
+                                    <div id="btn-sel-1" draggable="true" class="btn-drag">&emsp;</div>
+                                    <div id="btn-sel-2" draggable="true" class="btn-drag">&emsp;</div>
+                                    <div id="btn-sel-3" draggable="true" class="btn-drag">&emsp;</div>
+                                    <div id="btn-sel-4" draggable="true" class="btn-drag">&emsp;</div>
+                                    <div id="btn-sel-5" draggable="true" class="btn-drag">&emsp;</div>
+                                    <div id="btn-sel-6" draggable="true" class="btn-drag">&emsp;</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <button id="btn-valider" type="button" class="btn btn-primary my-1">Valider</button>
+                        </div>
+                        <div class="col-6">
+                            <div id="champmessage">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+        <script src="./asset/js/script.js" defer></script>
+</body>
+
+</html>
